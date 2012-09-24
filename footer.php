@@ -5,8 +5,9 @@
  */
 ?>
   <div class="clearfix"></div>
-  <footer>
-  </footer>
+  <div id="footer" class="font-blue">
+	workcampNE Inc. is a recognized 501(c)(3) &bull; <a href="https://www.paypal.com/us/cgi-bin/webscr?cmd=_flow&SESSION=Hoc9kaM4tln-wu5_lSks70Zc0ub11lY5qn6Oa5lGmod4df-_DUwFWH_uuTO&dispatch=5885d80a13c0db1f8e263663d3faee8db02a037e263542f58098410815cf7df7" target="blank">Donate to Workcamp</a>
+  </div>
 </div> <!--! end of #container -->
 
 
