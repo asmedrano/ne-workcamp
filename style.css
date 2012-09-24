@@ -123,6 +123,7 @@ body{
 	margin: 10px auto;
 	background:#fff;
 	padding:30px;
+	padding-bottom: 15px;
 }
 
 #main{
@@ -296,12 +297,12 @@ body{
 	color:#033568;
 }
 
-#comment-form #submit-wrap{
+#submit-wrap{
 	text-align:right;
 	margin:30px 20px 0 0;
 }
 
-#comment-form #submit
+#submit, #submit-wrap input[type="submit"]
 {	
 	font-size:12px;
 	background: #333;
@@ -309,7 +310,9 @@ body{
 	border:none;
 	padding:7px 15px;
 }
-#comment-form #submit:hover{
+
+
+#submit:hover{
 	background-color:#666;
 	color:#fff;
 }
@@ -429,6 +432,80 @@ body{
         background: #f5f4f2
 
 }
+
+/*contact form*/
+#form {
+	font-family: 'Lato', sans-serif;
+}
+
+.form-element {
+	position:relative;
+	margin-bottom:9px;
+
+}
+
+.form-element label{
+	color:#024174;
+	font-size:13px;
+	text-transform:uppercase;
+	display:inline;
+	margin-right:3px;
+
+}
+
+.form-element input[type="text"], .form-element textarea{
+	font-size:11px;
+	width:540px;
+	padding-bottom:0px;
+	border:1px solid #ddd6ce;
+        padding:3px 2px;
+        margin-top:5px;
+        position:static;
+        background: #f5f4f2
+
+}
+
+.form-element input:focus{outline:none;}
+
+
+
+.form-item input, .form-item textarea{
+	    border: 1px solid #ececec;
+	    padding: 5px;
+}
+
+#contact-form #submit-wrap{
+	margin:0px;
+}
+
+#submit-wrap input[type="submit"]
+{
+        font-size:12px;
+        background: #333;
+        color:#fff;
+        border:none;
+        padding:7px 15px;
+}
+
+
+
+.form-item input{
+	width: 384px;
+}
+.form-item textarea{
+       	width:500px;
+}
+
+/*footer*/
+#footer{
+	margin-top:40px;
+	text-align:center;
+	font-size:11px;
+	font-family:'Arial', sans;
+}
+
+#footer a:hover{text-decoration:underline;}
+
 
 /* Some reusable classes */
 .dashed-bottom-border{
