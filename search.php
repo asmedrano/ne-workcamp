@@ -6,47 +6,54 @@
 
 get_header(); ?>
 
-  <div id="main" role="main">
-
+<div id="blog-wrap"> 
   <?php if (have_posts()) : ?>
-
-    <h2>Search Results</h2>
-
-    <nav>
-      <div><?php next_posts_link('&laquo; Older Entries') ?></div>
-      <div><?php previous_posts_link('Newer Entries &raquo;') ?></div>
-    </nav>
+	
+    <h2 id="search-ttl">Search Results</h2>
 
     <?php while (have_posts()) : the_post(); ?>
+	    <div class="post result">
 
-      <article <?php post_class() ?>>
-        <h3 id="post-<?php the_ID(); ?>"><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
-        <time><?php the_time('l, F jS, Y') ?></time>
+            <h1><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h1>
+            <div class = "meta">
+                <span class="category"><?php $cat = get_the_category(); echo $cat[0]->cat_name; ?></span> |
+                <span class="location"><?php echo(get_post_meta($post->ID,"Location", true)); ?>
+                </span> |
+                <span class="post-date">
+                    <?php the_time('F j, Y'); ?>
+                </span>
+            </div>
 
-        <footer>
-          <?php the_tags('Tags: ', ', ', '<br />'); ?> 
-          Posted in <?php the_category(', ') ?>
-          | <?php edit_post_link('Edit', '', ' | '); ?>
-          <?php comments_popup_link('No Comments &#187;', '1 Comment &#187;', '% Comments &#187;'); ?>
-        </footer>
-      </article>
+            <div class="post-content">
+            <?php the_content(__('Read more'));?>
+
+            </div><!--end post-content-->
+
+            <div class="post-social">
+
+            <p>Posted in: <a href=""><?php the_category(', ') ?></a> | <a href="#"><?php comments_popup_link('No Comments &#187;', '1 Comment &#187;', '% Comments &#187;'); ?></a></p>
+
+            </div><!--end post-social-->
+    
+
+
+	</div><!--end post-->
+
 
     <?php endwhile; ?>
 
-    <nav>
-      <div><?php next_posts_link('&laquo; Older Entries') ?></div>
-      <div><?php previous_posts_link('Newer Entries &raquo;') ?></div>
-    </nav>
-
   <?php else : ?>
 
-    <h2>No posts found. Try a different search?</h2>
+    <h2 id="search-ttl">No posts found. Try a different search?</h2>
+	<div id="no-search-results">
     <?php get_search_form(); ?>
+	</div>
 
   <?php endif; ?>
+</div> <!--end blog-wrap-->
 
-  </div>
+	<?php get_sidebar();?>
 
-<?php get_sidebar(); ?>
+	<div class="clearfix"></div>
 
 <?php get_footer(); ?>

@@ -1,32 +1,38 @@
 <?php
 /**
  * @package WordPress
- * @subpackage HTML5_Boilerplate
+ * @subpackage NE-Workcamp
  */
 
 get_header(); ?>
 
 <div id="main" role="main">
   <? // this section should really be included in smarter way than just adding it to every template ?>
-  <div id="main-content-head" class="dashed-bottom-border">
+  <div id="main-content-head">
   <img src="<?=$GLOBALS["TEMPLATE_RELATIVE_URL"]?>images/Perminent-Photos-wc.jpg" />
   </div>
   <? // end of should be include ?>
   <?php if (have_posts()) : ?>
     <?php while (have_posts()) : the_post(); ?>
 
-      <article <?php post_class() ?> id="post-<?php the_ID(); ?>">
-        <header>
-          <h2><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
-          <time datetime="<?php the_time('Y-m-d')?>"><?php the_time('F jS, Y') ?></time>
-          <span class="author">by <?php the_author() ?></span>
-        </header>
-        <?php the_content('Read the rest of this entry &raquo;'); ?>
-        <footer>
-          <?php the_tags('Tags: ', ', ', '<br />'); ?> 
-          Posted in <?php the_category(', ') ?>
-          | <?php edit_post_link('Edit', '', ' | '); ?>
-          <?php comments_popup_link('No Comments &#187;', '1 Comment &#187;', '% Comments &#187;'); ?>
+      <article class="post dashed-top-border" id="post-<?php the_ID(); ?>">
+          <h2 class="title"><a class="font-blue" href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
+	  <div class="meta font-blue">
+	  <span class="categories"><?php the_category(', ') ?></span> | 
+          <span class="location"><?php echo(get_post_meta($post->ID,"Location", true)); ?> |
+          <span class="date"><?php the_time('m.d.y') ?></span>
+	  </div>
+	<div class="content">
+        	<?php the_content('... Read the rest'); ?>
+	</div>
+	<footer>
+	  <div class="social">
+          <span class="comments-link"> <?php comments_popup_link('No Comments', '1 Comment', '% Comments'); ?> </span>
+		
+	  <div class="post-share">
+	  Share: <a href="#" class="tweet-btn">Twitter</a> | <a href="#" class="facebook-btn">Facebook</a>
+          </div><!--end shared-->
+	</div>
         </footer>
       </article>
 

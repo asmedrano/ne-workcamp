@@ -91,7 +91,7 @@ body{
 #nav ul {margin:0; padding:0; list-style:none;}
 
 #nav ul li{
-	display:inline;
+	display:inline-block;
 	padding-right:25px;
 	margin-right:8px;
 	background: url(images/menu-dots-wc.jpg) no-repeat center right;
@@ -102,8 +102,11 @@ body{
 	font-family:"Times New Roman",Georgia,Serif;
 	font-size:19px;
 	color:#3a6590;
-	text-transform:uppercase
+	text-transform:uppercase;
+
 }
+
+#nav ul li a:hover{color:#999;}
 
 #nav ul li:last-child{
 	padding:0px;
@@ -112,7 +115,7 @@ body{
 }
 
 #nav-push{margin-left:80px;}
-
+	
 #container{
 	width: 835px;
 	margin: 10px auto;
@@ -134,7 +137,170 @@ body{
 
 #main-content-head{
 	margin-top:10px;
-	padding-bottom:20px;
+}
+
+/*----POSTS--------*/
+.post{
+	position:relative;
+	padding-top:15px;
+	margin-top:10px;
+}
+
+.post .title{ margin-top:5px; margin-bottom:-6px;}
+
+.post .meta{
+	font-size: 11px;
+	position: absolute;
+	top: 34px;
+	right: 0px;
+	font-weight:300;
+}
+.post .content{
+	font-size:13px;
+	color: #998880;
+}
+
+.post .content a:link,
+.post .content a:visited{
+	
+}
+
+.post .social{
+	border-top:1px solid #f3f3f3;
+	color: #666;
+	font-size:11px;
+	text-transform:uppercase;
+	margin-top:20px;
+	padding: 10px 0px;
+}
+
+.post .social a:link,
+.post .social a:visited
+{
+	color: #033568;
+	text-decoration:none;
+}
+.post .social a:hover{
+	text-decoration:underline;
+}
+
+.post .more-link:link,
+.post .more-link:visited{
+	color:#033568;
+	font-style:italic;
+	text-decoration:underline;
+}
+
+.post .more-link:hover{
+	text-decoration:none;
+
+}
+
+/*Comments*/
+
+.post-comments{
+	margin-top:20px;
+}
+
+
+.post-comments h2{
+	font-size:15px;
+}
+
+.comment-author img{
+	display:none;
+}
+
+.post-comments .comment-author{
+	display:inline;
+}
+.comment-author cite, .comment-author .fn{
+	font-style:normal;
+}
+
+.post-comments .comment p {
+	display:inline;
+}
+.commentlist{
+	list-style:none;
+	margin:0;padding:0;
+}
+
+.commentlist li  {
+	margin-top:8px;
+}
+
+.depth-1{
+	border-top: 1px dashed #e3e3e3;
+	padding-top:7px;
+}
+
+.comment{
+	font-size:12px;
+}
+
+.comment-author{
+	color:#033568;
+
+}
+
+.comment-waiting{
+	font-size:10px;
+	color:#f28c8c;
+}
+.comment-reply-link:link,
+.comment-reply-link:visited{
+	text-transform:uppercase;
+	color:#333;
+	font-size:10px;
+	margin-top:5px;
+	display:inline-block;
+	text-decoration:none;
+}
+
+.comment-reply-link:hover{
+	text-decoration:underline
+}
+
+
+#comment-form-wrapper{
+	margin-top:20px;
+	font-size:11px;
+}
+
+#comment-form input[type="text"], #comment-form input[type="email"], #comment-form textarea{
+	border:1px solid #ddd6ce;
+	padding:3px 2px;
+	margin-top:5px;
+	position:static;
+	width:490px;
+
+	background: #f5f4f2
+}
+
+#comment-form label {
+	display:inline-block;
+	width:55px;
+	text-align:right;
+	color:#033568;
+}
+
+#comment-form #submit-wrap{
+	text-align:right;
+	margin:30px 20px 0 0;
+}
+
+#comment-form #submit
+{	
+	font-size:12px;
+	background: #333;
+	color:#fff;
+	border:none;
+	padding:7px 15px;
+}
+#comment-form #submit:hover{
+	background-color:#666;
+	color:#fff;
 }
 
 /* Some reusable classes */
@@ -142,7 +308,27 @@ body{
 	background: url(images/H-dotted-line2-wc.jpg) repeat-x bottom center;
 }
 
+.dashed-top-border{
+	background: url(images/H-dotted-line2-wc.jpg) repeat-x top center;
+}
 .font-blue{
-	color:#3a6590
+	color:#033568;
+	font-family:"Times New Roman",Georgia,Serif;
+	text-transform:uppercase;
+	font-weight:normal;
 }
 
+.font-blue a{
+	text-decoration:none;
+	color:#033568;
+}
+
+a.font-blue:link, 
+a.font-blue:visited{
+	text-decoration:none;
+	color:#033568;
+}
+
+iframe{
+	border:none;
+}
