@@ -86,6 +86,8 @@ body{
 #nav{
 	padding: 5px 0px 15px;
 	text-align:center;
+	position:relative;
+	z-index:20px;
 }
 
 #nav ul {margin:0; padding:0; list-style:none;}
@@ -144,9 +146,10 @@ body{
 	position:relative;
 	padding-top:15px;
 	margin-top:10px;
+	color:#504E4D;
 }
 
-.post .title{ margin-top:5px; margin-bottom:-6px;}
+.post .title{ margin-top:5px; margin-bottom:0px;}
 
 .post .meta{
 	font-size: 11px;
@@ -157,13 +160,28 @@ body{
 }
 .post .content{
 	font-size:13px;
-	color: #998880;
+	color: #504E4D;
+}
+
+.post p{
+	margin:5px 0px;
+
+}
+
+.post strong{
+	
+	color:#033568;
 }
 
 .post .content a:link,
 .post .content a:visited{
 	
+	color:#033568;
+	
 }
+
+.post .content a:hover{text-decoration:none;}
+
 
 .post .social{
 	border-top:1px solid #f3f3f3;
@@ -186,9 +204,7 @@ body{
 
 .post .more-link:link,
 .post .more-link:visited{
-	color:#033568;
 	font-style:italic;
-	text-decoration:underline;
 }
 
 .post .more-link:hover{
