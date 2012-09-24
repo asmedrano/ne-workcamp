@@ -47,11 +47,12 @@
 
   <div id="container">
     <div id ="header" class="dashed-bottom-border">
-    <!--
-	<a href="<?php echo get_option('home'); ?>/"><img src="<?=$GLOBALS["TEMPLATE_RELATIVE_URL"]?>images/website-logo-wc.jpg" /></a>
-	-->
+	<a id="logo" href="<?php echo get_option('home'); ?>/"><img src="<?=$GLOBALS["TEMPLATE_RELATIVE_URL"]?>images/logo-wc.png" /></a>
+	<img id="ribbon" src="<?=$GLOBALS["TEMPLATE_RELATIVE_URL"]?>images/grey-ribbon-back-wc.png"/>
     </div>
     <div id="nav" class="dashed-bottom-border">
-    <?php wp_nav_menu( array( 'sort_column' => 'menu_order', 'container_class' => 'menu-header' ) ); ?>
+    	<div id="nav-push">
+    	<?php wp_nav_menu( array( 'sort_column' => 'menu_order', 'container_class' => 'menu-header' ) ); ?>
+	</div>
     </div>
    

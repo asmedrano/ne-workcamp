@@ -7,6 +7,11 @@
 get_header(); ?>
 
 <div id="main" role="main">
+  <? // this section should really be included in smarter way than just adding it to every template ?>
+  <div id="main-content-head" class="dashed-bottom-border">
+  <img src="<?=$GLOBALS["TEMPLATE_RELATIVE_URL"]?>images/Perminent-Photos-wc.jpg" />
+  </div>
+  <? // end of should be include ?>
   <?php if (have_posts()) : ?>
     <?php while (have_posts()) : the_post(); ?>
 

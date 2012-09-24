@@ -68,6 +68,19 @@ body{
 
 #header{
 	height:110px;
+	position:relative;
+}
+
+#header #logo{
+	position:absolute;
+	top: -29px;
+	left: -6px;
+}
+
+#header #ribbon{
+	position:absolute;
+	right: -54px;
+	top: -5px;
 }
 
 #nav{
@@ -87,7 +100,7 @@ body{
 #nav ul li a{
 	text-decoration:none;
 	font-family:"Times New Roman",Georgia,Serif;
-	font-size:20px;
+	font-size:19px;
 	color:#3a6590;
 	text-transform:uppercase
 }
@@ -98,6 +111,7 @@ body{
 	background:none;
 }
 
+#nav-push{margin-left:80px;}
 
 #container{
 	width: 835px;
@@ -114,6 +128,13 @@ body{
 #sidebar{
 	width:240px;
 	float:right;
+	margin-top:10px;
+}
+
+
+#main-content-head{
+	margin-top:10px;
+	padding-bottom:20px;
 }
 
 /* Some reusable classes */
