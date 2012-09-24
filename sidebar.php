@@ -8,7 +8,7 @@
 	<div id="sidebar">
 		<div id="content-wrap">
 			<div id="fixed-content">
-				<a href="" class="fixed-link" id="about-link"></a>
+				<a href="/about-us" class="fixed-link" id="about-link"></a>
 				<a href="http://www.facebook.com/workcampNE" target="blank" class="fixed-link" id="facebook"></a>
 				<a href="https://twitter.com/workcampne" target="blank" class="fixed-link" id="twitter"></a>
 				<a href="" class="fixed-link" id="youtube"></a>
