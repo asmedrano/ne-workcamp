@@ -61,41 +61,45 @@ HTML Boilerplate styles can be found in the html5-boilerplate/css directory.
 	padding-top: 10px;
 }
 
+#overlay-wrap{
+	left:-7px !important;
+}
+
 /* -------------------------THEME STYLEs START HERE ----------------------------*/
 body{
 	background:url(images/Wood-background-wc.jpg);
 }
 
 #header{
-	height:110px;
+	height:101px;
 	position:relative;
 }
 
 #header #logo{
 	position:absolute;
-	top: -29px;
-	left: -6px;
+	top: -30px;
+	left: -26px;
 }
 
 #header #ribbon{
-	position:absolute;
-	right: -95px;
-	top: -56px;
+	position: absolute;
+	right: -91px;
+	top: -58px;
 }
 
+
 #nav{
-	padding: 5px 0px 15px;
-	text-align:center;
+	padding: 6px 0px 19px;
 	position:relative;
-	z-index:20px;
+	z-index:20;
 }
 
 #nav ul {margin:0; padding:0; list-style:none;}
 
 #nav ul li{
-	display:inline-block;
-	padding-right:25px;
-	margin-right:8px;
+	display: inline-block;
+	padding-right: 22px;
+	margin-right: 7px;
 	background: url(images/menu-dots-wc.jpg) no-repeat center right;
 }
 
@@ -116,25 +120,26 @@ body{
 	background:none;
 }
 
-#nav-push{margin-left:80px;}
+#nav-push{margin-left:108px;}
 	
 #container{
-	width: 835px;
-	margin: 10px auto;
-	background:#fff;
-	padding:30px;
-	padding-bottom: 15px;
+	width: 809px;
+	margin: 0px auto;
+	background: white;
+	padding: 30px 26px 0 30px;
+	padding-bottom: 15px
 }
 
+
 #main{
-	width:566px;
+	width:552px;
 	float:left;	
 }
 
 
 
 #main-content-head{
-	margin-top:10px;
+	margin-top:7px;
 }
 
 /*----POSTS--------*/
@@ -145,7 +150,11 @@ body{
 	color:#504E4D;
 }
 
-.post .title{ margin-top:5px; margin-bottom:0px;}
+.post .title{ 
+	margin-top:5px;
+	margin-bottom:0px;
+	font-size:1.3em;
+}
 
 .post .meta{
 	font-size: 11px;
@@ -156,7 +165,12 @@ body{
 }
 .post .content{
 	font-size:13px;
-	color: #504E4D;
+	color: #AB9C8F;
+}
+
+.post h4{
+	color:#033568;
+	margin: 10px 0 12px 0;
 }
 
 .post p{
@@ -165,8 +179,7 @@ body{
 }
 
 .post strong{
-	
-	color:#033568;
+
 }
 
 .post .content a:link,
@@ -320,28 +333,29 @@ body{
 /*--------sidebar----------*/
 
 #sidebar{
-	width:220px;
+	width:217px;
 	float:right;
-	margin-top:10px;
+	padding-top:10px;
 	background:url(images/dotted-verticle-line-wc.jpg) repeat-y; 
-	padding-left:20px;
+	padding-left:33px;
 }
 
 #sidebar #content-wrap{
-	width:211px;
-	margin:0 auto;
+	width:217px;
 	background:url(images/light-wood-wc-2.png);
 	padding-bottom:20px;
+	border:1px solid #BEB7AC;
 }
 
 #sidebar #content-wrap #fixed-content{
 	position:relative;
-	min-height:500px;
+	min-height:565px;
 }
 
 #sidebar #content-wrap #fixed-content img{
 	position:absolute;
-	top:-9px;
+	top:-17px;
+	left:-21px;
 }
 
 #sidebar .fixed-link{
@@ -352,14 +366,14 @@ body{
 }
 
 #about-link{
-	top:289px;
+	top:389px;
 	width:100px;
 	z-index:30;
 	right:0;
 }
 
 #fixed-content #facebook{
-	top: 369px;
+	top: 429px;
 	width: 149px;
 	z-index: 30;
 	right: 10px;
@@ -367,7 +381,7 @@ body{
 }
 
 #fixed-content #twitter{
-	 top: 389px;
+	 top: 453px;
         width: 149px;
         z-index: 30;
         right: 10px;
@@ -376,7 +390,7 @@ body{
 
 
 #fixed-content #youtube{
-	top: 410px;
+	top: 476px;
         width: 130px;
         z-index: 30;
         right: 20px;
@@ -384,11 +398,11 @@ body{
 }
 
 #fixed-content #subscribe{
-	top:430px;
+	top:500px;
 	width:130px;
 	z-index:30;
 	height:19px;
-	right:20px;
+	right:32px;
 }
 
 #sidebar #categories{
@@ -429,8 +443,9 @@ body{
 	border:1px solid #ddd6ce;
         padding:3px 2px;
         margin-top:5px;
-        background: #f5f4f2
-
+        background: #f5f4f2;
+	width:175px;
+	
 }
 
 /*contact form*/
@@ -506,6 +521,12 @@ body{
 
 #footer a:hover{text-decoration:underline;}
 
+.wcne-text-logo{
+	text-transform:lowercase;
+}
+.wcne-text-logo i{
+	text-transform: uppercase;
+}
 
 /* Some reusable classes */
 .dashed-bottom-border{
