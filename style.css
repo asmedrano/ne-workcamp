@@ -101,7 +101,11 @@ body{
 	padding-right: 22px;
 	margin-right: 7px;
 	background: url(images/menu-dots-wc.jpg) no-repeat center right;
+	position:relative;
 }
+
+
+
 
 #nav ul li a{
 	text-decoration:none;
@@ -114,10 +118,45 @@ body{
 
 #nav ul li a:hover{color:#999;}
 
-#nav ul li:last-child{
+#nav ul li:last-child,
+#nav ul li:last-child a:link,
+#nav ul li:last-child a:visited
+{
 	padding:0px;
 	margin:0px;
 	background:none;
+	border:none;
+}
+
+#nav ul li ul{display:none;}
+
+#nav ul li:hover ul{
+	display:block;
+	position:absolute;
+	background: #fff;
+	padding:5px 10px 5px;
+	/*
+	-moz-box-shadow:1px 4px 2px 1px rgba(119, 119, 119, 0.36);
+	-webkit-box-shadow:1px 4px 2px 1px rgba(119, 119, 119, 0.36);
+	box-shadow:1px 4px 2px 1px rgba(119, 119, 119, 0.36);
+	*/
+}
+
+#nav ul li ul li{
+	display:block;
+	padding:0;
+	margin:0;
+	margin-bottom:5px;
+	background: none;
+	min-width:120px;
+}
+
+#nav ul li ul li a:link, 
+#nav ul li ul li a:visited{
+	font-size:13px;
+	padding:0 0 5px 0;
+	border-bottom: dashed 1px #e3e3e3; 
+
 }
 
 #nav-push{margin-left:108px;}
