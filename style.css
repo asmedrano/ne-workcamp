@@ -550,6 +550,35 @@ body{
        	width:500px;
 }
 
+
+.subscribe-form .form-element{display:inline-block;}
+
+.subscribe-form input[type="text"]{
+	width:300px;
+	padding:7px;
+}
+
+
+.subscribe-form #submit-wrap{
+	display:inline-block;	
+}
+
+.wpcf7-response-output{
+	border:none !important;
+       	color: #444; 
+	background: #e3e3e3;
+	text-align:center;
+}
+
+.wpcf7-not-valid-tip{
+	border:none !important;
+	text-align:center;
+	color:white !important;
+	background:rgb(238, 108, 108) !important;
+
+}
+
+
 /*footer*/
 #footer{
 	margin-top:40px;
@@ -582,7 +611,13 @@ body{
 	font-weight:normal;
 }
 
-.font-blue a{
+.blue{
+	color:#033568;
+}
+
+
+.font-blue a,
+.blue a{
 	text-decoration:none;
 	color:#033568;
 }

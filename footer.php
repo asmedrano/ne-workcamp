@@ -5,9 +5,12 @@
  */
 ?>
   <div class="clearfix"></div>
-  <div id="footer" class="font-blue">
-	<span class="wcne-text-logo">workcamp<i>NE</i></span> Inc. is a recognized 501(c)(3) &bull; <a href="https://www.paypal.com/us/cgi-bin/webscr?cmd=_flow&SESSION=Hoc9kaM4tln-wu5_lSks70Zc0ub11lY5qn6Oa5lGmod4df-_DUwFWH_uuTO&dispatch=5885d80a13c0db1f8e263663d3faee8db02a037e263542f58098410815cf7df7" target="blank">Donate to Workcamp</a>
+  <div id="footer" class="blue">
+	<span class="wcne-text-logo">workcamp<i>NE</i></span> Inc. is a recognized 501(c)(3) &bull; <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=87LDQUABJWN8S" target="blank">Donate to <span class="wcne-text-logo">workcamp<i>NE</i></span></a>
+
+
   </div>
+
 </div> <!--! end of #container -->
 
 

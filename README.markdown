@@ -25,4 +25,15 @@ CONTACT FORM CODE for Contact form using the Contact Form 7 Plugin
 </div>
 
 ```
-
+SUBMIT FORM CODE
+```
+<div id="contact-form" class="subscribe-form">
+<div class="form-element">
+<label>Your Email (required)</label>
+    [email* your-email] 
+</div>
+<div id="submit-wrap">
+[submit "Submit"]
+</div>
+</div>
+```
