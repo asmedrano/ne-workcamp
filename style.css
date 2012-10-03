@@ -23,9 +23,16 @@ HTML Boilerplate styles can be found in the html5-boilerplate/css directory.
 	float: left;
 }
 
+img.alignleft{
+	padding-right:10px;
+}
+
 .alignright {
 	float: right;
 }
+
+
+
 
 .wp-caption {
 	border: 1px solid #ddd;

@@ -1,3 +1,18 @@
+$(function(){
+
+	$(".facebook-btn").click(function(e){
+		e.preventDefault();
+		fb_share();
+	});
+
+	$(".tweet-btn").click(function(e){
+		e.preventDefault();
+		twitter_share();	
+	});
+
+});
+
+
 function fb_share() {
 	var url= location.href;
 	var title= document.title;
