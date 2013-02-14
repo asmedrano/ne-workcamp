@@ -376,6 +376,35 @@ body{
 	color:#fff;
 }
 
+/*Shed Items*/
+.shed-item{
+	position:relative;
+}
+.shed-item h4{
+	font-size:18px;
+}
+.shed-item h5{
+	margin:5px 0;
+	font-size:16px;
+}
+.shed-item form{ margin-top:10px;}
+.shed-item-img{
+	height:300px;
+	width:310px;
+	float:left;
+	border:1px solid #e3e3e3;
+	margin-right:20px;
+	background-repeat: no-repeat;
+	background-position:center center;
+	background-color:rgb(255, 250, 250);
+	display:block;
+}
+
+.shed-meta{
+	float:right;
+	width:215px;
+}
+
 /*--------sidebar----------*/
 
 #sidebar{

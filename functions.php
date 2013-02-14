@@ -4,6 +4,8 @@
  * @subpackage HTML5_Boilerplate
  */
 
+include 'shortcodes.php';
+
 // Custom HTML5 Comment Markup
 function mytheme_comment($comment, $args, $depth) {
    $GLOBALS['comment'] = $comment; ?>
