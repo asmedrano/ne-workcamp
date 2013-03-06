@@ -437,6 +437,7 @@ body{
 	display:block;
 	height:50px;
 	position:absolute;
+	background:url(./g.gif) repeat;
 
 }
 
